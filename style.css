@@ -1,0 +1,365 @@
+/* Reset dasar untuk menghindari perbedaan antar browser */
+
+/* Hero Section */
+#hero2 {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 50px 20px; /* Padding atas dan bawah dikurangi */
+}
+
+#hero2 h1 {
+    font-size: 2rem; /* Ukuran font judul lebih kecil */
+    margin-bottom: 15px; /* Kurangi jarak bawah */
+}
+
+/* Responsif untuk layar kecil */
+@media only screen and (max-width: 768px) {
+    #hero {
+        padding: 30px 15px; /* Kurangi padding lebih jauh di perangkat kecil */
+    }
+    #hero h1 {
+        font-size: 1.5rem; /* Ukuran judul lebih kecil */
+    }
+    #hero p {
+        font-size: 0.9rem; /* Ukuran paragraf lebih kecil */
+    }
+    #hero .cta-button {
+        font-size: 0.9rem; /* Ukuran tombol lebih kecil */
+        padding: 8px 15px; /* Kurangi padding tombol */
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body umum */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header dan navigasi */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Bagian Hero */
+#hero {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #fff;
+    color: #3498db;
+    padding: 15px 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+    color: white;
+}
+
+/* Bagian Layanan */
+/* Bagian Layanan */
+#services {
+    background-color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* Menata item layanan */
+.service-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 15px;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+}
+
+.service-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+/* Menata gambar di dalam layanan */
+.service-item .service-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Atur ukuran gambar cover manga */
+.manga-cover {
+    width: 150px; /* Atur lebar gambar, contoh 150px */
+    height: auto; /* Menjaga proporsi gambar */
+    margin: 10px 0; /* Memberi jarak atas dan bawah */
+    display: block; /* Agar gambar selalu berada di satu baris */
+    margin-left: auto;
+    margin-right: auto; /* Gambar berada di tengah */
+    border-radius: 8px; /* Opsional: Beri sudut melengkung untuk gambar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Opsional: Tambahkan bayangan */
+}
+
+.card-cover {
+    width: 200px; /* Atur lebar gambar, contoh 150px */
+    height: auto; /* Menjaga proporsi gambar */
+    margin: 10px 0; /* Memberi jarak atas dan bawah */
+    display: block; /* Agar gambar selalu berada di satu baris */
+    margin-left: auto;
+    margin-right: auto; /* Gambar berada di tengah */
+    border-radius: 8px; /* Opsional: Beri sudut melengkung untuk gambar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Opsional: Tambahkan bayangan */
+}
+
+
+/* Responsif untuk perangkat lebih kecil */
+@media only screen and (max-width: 768px) {
+    .service-item {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    #services h2 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .service-item {
+        width: 100%;
+        margin: 15px 0;
+    }
+    #services h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Tombol "Lebih Lengkap" */
+.read-more {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.read-more-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+.read-more-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+}
+
+
+/* Bagian Kontak */
+#contact {
+    background-color: #ecf0f1;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsif untuk perangkat lebih kecil */
+@media only screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .service-item {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero p {
+        font-size: 1.1rem;
+    }
+
+    .cta-button {
+        font-size: 1.2rem;
+        padding: 12px 24px;
+    }
+
+    #services h2 {
+        font-size: 2rem;
+    }
+
+    #contact h2 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .service-item {
+        width: 100%;
+        margin: 15px 0;
+    }
+}
+
+.squad-container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #87ceeb;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.squad-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4682b4;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+table, th, td {
+    border: 1px solid #87ceeb;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #4682b4;
+    color: #fff;
+}
